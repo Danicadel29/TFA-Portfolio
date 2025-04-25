@@ -1,0 +1,68 @@
+/* typographies */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.title-header,
+.title-big, 
+.title-medium, 
+.title-small,
+.title-section {
+    color: $color-primary;
+    font-family: $font-primary;
+    line-height: 1.2;
+}
+
+.title-header, .title-big { @include font-size-responsive(38px, 57px, 63px); }
+.title-medium { @include font-size-responsive(28px, 43px, 47px); }
+.title-big { margin-bottom: 5rem; }
+
+
+.title-small, .title-section { @include font-size-responsive(21px, 32px, 36px); }
+.title-small { 
+    margin-top: 5rem;
+}
+.title-section {
+    margin-bottom: 2rem;
+}
+
+.paragraph-default {
+    @include font-size-responsive(16px, 18px, 20px);
+    @include paragrpah ($color-black);
+}
+.paragraph--footer {
+    @include font-size-responsive(12px, 14px, 15px);
+    @include paragrpah ($color-white);
+    text-align: center;
+}
+
+.margin-reset {
+    margin: 0;
+}
+
+
+/* titre billet */
+.swal2-title {
+    @include font-size-responsive(21px, 32px, 36px);
+    font-family: $font-primary;
+    color: $color-primary;
+}
+
+.color-primary {
+    color: $color-primary;
+}
+
+// Sélecteurs pour margin
+[data-m] { margin: attr(data-m rem); }
+[data-mt] { margin-top: attr(data-mt rem); }
+[data-mb] { margin-bottom: attr(data-mb rem); }
+[data-ml] { margin-left: attr(data-ml rem); }
+[data-mr] { margin-right: attr(data-mr rem); }
+[data-mx] {
+    margin-left: attr(data-mx rem);
+    margin-right: attr(data-mx rem);
+}
+[data-my] {
+    margin-top: attr(data-my rem);
+    margin-bottom: attr(data-my rem);
+}
