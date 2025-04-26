@@ -3,7 +3,7 @@
 //mettre en place un style de base pour le site
 // reset de la margin et padding de tout les elements
 
-.Body {
+.Body, .Work, .Data{
   margin: 0;
   padding: 0;
   background-color: $color-bg;
