@@ -12,11 +12,13 @@
 
 .Home .grid{
         display: grid;
+        grid-template-columns: 1fr 1fr;
         padding-left: 30px;
         padding-right: 30px;
     
 
     @include responsive(tablet) {
+            grid-template-columns: 1fr 1fr;
             padding-left: 60px;
             padding-right: 60px;
     }
@@ -36,11 +38,13 @@
 
 .Work .grid{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 30px;
     padding-right: 30px;
 
 
 @include responsive(tablet) {
+        grid-template-columns: 1fr 1fr;
         padding-left: 60px;
         padding-right: 60px;
 }
@@ -60,11 +64,13 @@
 
 .Data .grid{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 30px;
     padding-right: 30px;
 
 
 @include responsive(tablet) {
+        grid-template-columns: 1fr 1fr;
         padding-left: 60px;
         padding-right: 60px;
 }
@@ -86,11 +92,13 @@
 
 .Fiction .grid{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 30px;
     padding-right: 30px;
 
 
 @include responsive(tablet) {
+        grid-template-columns: 1fr 1fr;
         padding-left: 60px;
         padding-right: 60px;
 }
