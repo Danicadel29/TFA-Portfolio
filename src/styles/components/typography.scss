@@ -9,3 +9,24 @@
     line-height: 1.2;
     color: $color-primary;
  }
+
+.texte{ @include font-size-responsive(16px, 20px, 24px); }
+
+.sous-titre{ @include font-size-responsive(19px, 29px, 41px); }
+
+.titre{ @include font-size-responsive(23px, 41px, 60px); }
+
+.grand-titre{ @include font-size-responsive(28px, 60px, 103px); }
+
+.titre, .sous-titre, .grand-titre{
+      font-family: $font-secondary;
+      line-height: 1.2;
+      color: $color-primary;
+      font-weight: 400;
+}
+
+.texte{
+      font-family: $font-primary;
+      line-height: 1.2;
+      color: $color-texte;
+}
