@@ -1,14 +1,5 @@
  /* typographies */
 
-//mettre quelle police pour quel classe
-//essais
- h1{
-    font-family: $font-secondary;
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 1.2;
-    color: $color-primary;
- }
 
 .texte{ @include font-size-responsive(16px, 20px, 24px); }
 
@@ -29,4 +20,10 @@
       font-family: $font-primary;
       line-height: 1.2;
       color: $color-texte;
+}
+
+.sous-titre__special{
+   color: $color-texte;
+   font-family: $font-primary;
+
 }
