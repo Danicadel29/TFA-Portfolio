@@ -1,2 +1,57 @@
 // grid 
 //mettre en place les grids pour le site
+
+.grid {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+}
+
+/* grid Home */
+
+.Home .grid{
+        display: grid;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+
+    @include responsive(tablet) {
+            padding-left: 60px;
+            padding-right: 60px;
+    }
+
+    @include responsive(desktop) {
+            grid-template-columns: 
+            490px 115px
+            170px 115px
+            490px
+            ;
+            padding-left: 30px;
+            padding-right: 30px;
+    }
+}
+
+/* grid Work */
+
+.Work .grid{
+    display: grid;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+@include responsive(tablet) {
+        padding-left: 60px;
+        padding-right: 60px;
+}
+
+@include responsive(desktop) {
+        grid-template-columns: 
+        500px 155px
+        280px 60px
+        280px
+        ;
+        padding-left: 30px;
+        padding-right: 135px;
+}
+}
