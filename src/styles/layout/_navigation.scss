@@ -30,9 +30,17 @@
 .Nav__liste {
     display: flex;
     flex-direction: row;
-    gap: 25%;
+    gap: 5%;
      margin: 0;
      justify-content: center;
+
+     @include responsive(tablet) {
+        gap: 10%;
+    }
+    
+    @include responsive(desktop) {
+       gap: 25%;
+    }
     
 }
 
