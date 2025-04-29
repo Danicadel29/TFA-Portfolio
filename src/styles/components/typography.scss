@@ -7,7 +7,8 @@
 
 .titre{ @include font-size-responsive(23px, 41px, 60px); }
 
-.grand-titre{ @include font-size-responsive(28px, 60px, 103px); }
+.grand-titre,
+.grand-titre__special{ @include font-size-responsive(28px, 60px, 103px); }
 
 .titre, .sous-titre, .grand-titre{
       font-family: $font-secondary;
@@ -26,4 +27,8 @@
    color: $color-texte;
    font-family: $font-primary;
 
+}
+
+.special{
+   color: $color-secondary;
 }
