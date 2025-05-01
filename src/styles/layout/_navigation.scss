@@ -28,13 +28,14 @@
 }
 
 .Nav__liste {
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-     margin: 0;
-     justify-content: center;
+    
 
      @include responsive(tablet) {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        margin: 0;
+        justify-content: center;
         gap: 10%;
     }
     
