@@ -20,14 +20,61 @@
 } */
 
 .Nav{
-    width: 100vw;
+    width: 50vw;
+    height: 5vh;
     display: flex;
     justify-content: center;
     background-color: $color-tertiary;
     border: solid 1px $color-primary;
+
+    @include responsive(tablet) {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        background-color: $color-tertiary;
+        border: solid 1px $color-primary;
+}
+    
+    @include responsive(desktop) {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        background-color: $color-tertiary;
+        border: solid 1px $color-primary;
+}
+}
+
+.burger{
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 100;
+
+
+    @include responsive(tablet) {
+            display: none;
+    }
+  
+    @include responsive(desktop) {
+            display: none;
+    }
+    
 }
 
 .Nav__liste {
+    display: none;
+    flex-direction: row;
+    background-color: $color-secondary;
+    position: absolute;
+    width: 50%;
+    padding: 2%;
+    gap: 0;
     
 
      @include responsive(tablet) {
@@ -37,6 +84,8 @@
         margin: 0;
         justify-content: center;
         gap: 10%;
+        background-color: transparent;
+        position: relative;
     }
     
     @include responsive(desktop) {

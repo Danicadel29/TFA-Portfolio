@@ -208,15 +208,3 @@
 }
 
 }}
-
-.cacher{
-        display: none;
-
-        @include responsive(tablet) {
-                display: none;
-        }
-    
-        @include responsive(desktop) {
-                display: block;
-        }
-}

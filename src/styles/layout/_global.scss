@@ -15,3 +15,15 @@
   width: 100vw;
   text-align: center;
 }
+
+.visible_ordi{
+  display: none;
+
+  @include responsive(tablet) {
+          display: none;
+  }
+
+  @include responsive(desktop) {
+          display: block;
+  }
+}
