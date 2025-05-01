@@ -99,8 +99,6 @@
     
 }
 
-
-
 .element__Nav{
     display: flex;
     align-items: center;
@@ -126,6 +124,78 @@
 }
 
 .element__Nav a:hover{
+    color: $color-secondary;
+    
+}
+
+
+
+.element__Footer, 
+.element__Info{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-texte;
+}
+
+
+.element__Footer a{
+    padding-bottom: 3%;
+    padding-top: 0%;
+    display: flex;
+    color: $color-texte;
+    text-decoration: none;
+    list-style: none;
+    font-size: 10px;
+
+
+    @include responsive(tablet) {
+        padding-bottom: 1%;
+        padding-top: 0%;
+        font-size: 20px;
+    }
+
+    @include responsive(desktop) {
+        padding-bottom: 3%;
+        padding-top: 5%;
+        font-size: 24px;
+    }
+}
+
+.Info__liste{
+    position: absolute;
+    right: 30px;
+}
+
+.element__Info a{
+    font-size: 10px;
+    margin-left: auto;
+    padding-bottom: 6%;
+    padding-top: 0%;
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    color: $color-texte;
+    text-decoration: none;
+    list-style: none;
+    align-items: flex-end;
+
+    @include responsive(tablet) {
+        padding-bottom: 1%;
+        padding-top: 2%;
+        font-size: 20px;
+    }
+
+    @include responsive(desktop) {
+        padding-bottom: 4%;
+        padding-top: 6%;
+        font-size: 24px;
+    }
+}
+
+
+.element__Footer a :hover,
+.element__Info a:hover{
     color: $color-secondary;
     
 }

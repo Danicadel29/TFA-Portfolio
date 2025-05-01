@@ -27,3 +27,20 @@
           display: block;
   }
 }
+
+.Footer{
+  display: flex;
+  background-image: url(../assets/images/deco-footer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 10vh;
+
+  @include responsive(tablet) {
+    height: 15vh;
+}
+
+@include responsive(desktop) {
+  height: 20vh;
+}
+}
