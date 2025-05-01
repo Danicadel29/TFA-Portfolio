@@ -67,13 +67,18 @@
     
 }
 
+.Nav__liste.active {
+    display: block;
+}
+
 .Nav__liste {
     display: none;
     flex-direction: row;
-    background-color: $color-secondary;
+    background-color: $color-tertiary;
     position: absolute;
-    width: 50%;
-    padding: 2%;
+    width: 50vw;
+    top: 2%;
+    padding: 0;
     gap: 0;
     
 
