@@ -8,6 +8,7 @@
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    margin-bottom: 5%;
 
     @include responsive(tablet) {
         background-image: url('../assets/images/Section-Moi-tel.svg');
@@ -20,6 +21,27 @@
     @include responsive(desktop) {
         background-image: url('../assets/images/Section-Moi.svg');
         width: 100vw;
-        height: 55vh;
+        height: 60vh;
 }
+}
+
+.deco__bande__orange{
+    display: none;
+
+    @include responsive(tablet) {
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+    
+    @include responsive(desktop) {
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+}
+
+.logo{
+    width: 100%;
+    height: auto;
 }
