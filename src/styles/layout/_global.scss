@@ -32,7 +32,7 @@
   display: flex;
   background-image: url(../assets/images/deco-footer.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   background-size: cover;
   height: 10vh;
 
@@ -43,4 +43,9 @@
 @include responsive(desktop) {
   height: 20vh;
 }
+}
+
+
+.section__about .texte{
+  margin-top: 40%;
 }
