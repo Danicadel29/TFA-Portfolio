@@ -1,0 +1,55 @@
+
+.image__site__complet{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: flex;
+    display: none;
+
+  @include responsive(tablet) {
+          display: none;
+  }
+
+  @include responsive(desktop) {
+          display: block;
+  }
+
+
+}
+
+.image__section__site {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.image__section__anim,
+.image__section__apprit{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+.image__section__presentation1,
+.image__section__presentation2,
+.image__section__presentation3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    width: 40%;
+
+    @include responsive(tablet) {
+        width: 40%;
+}
+
+    @include responsive(desktop) {
+        width: 100%;
+}
+}
+
+.image__header_data{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
