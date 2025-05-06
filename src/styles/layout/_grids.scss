@@ -18,7 +18,7 @@
     
 
     @include responsive(tablet) {
-            grid-template-columns: 1frr;
+            grid-template-columns: 1fr;
             padding-left: 60px;
             padding-right: 60px;
     }
