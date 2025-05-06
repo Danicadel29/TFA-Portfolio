@@ -160,29 +160,31 @@
 /* grid fiction */
 
 .Fiction .grid{
-    display: grid;
-    grid-template-columns: 1fr ;
-    padding-left: 30px;
-    padding-right: 30px;
-
-
-@include responsive(tablet) {
-        grid-template-columns: 1fr ;
-        padding-left: 60px;
-        padding-right: 60px;
-}
-
-@include responsive(desktop) {
-        grid-template-columns: 
-        200px 60px
-        200px 53px
-        350px 60px
-        350px 47px
-        60px
-        ;
+        display: grid;
+        grid-template-columns: 1fr 30px 1fr;
         padding-left: 30px;
         padding-right: 30px;
-
+    
+        > *{
+            grid-column: 1 / -1;
+        }
+    
+    @include responsive(tablet) {
+            padding-left: 60px;
+            padding-right: 60px;
+    }
+    
+    @include responsive(desktop) {
+            grid-template-columns: 
+            200px 60px
+            200px 53px
+            350px 60px
+            350px 47px
+            60px
+            ;
+            padding-left: 30px;
+            padding-right: 30px;
+    
 .col-1-8{
         grid-column: 1 / 8;
 }
