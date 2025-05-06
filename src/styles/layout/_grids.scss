@@ -96,13 +96,15 @@
 
 .Data .grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 30px 1fr;
     padding-left: 30px;
     padding-right: 30px;
 
+    > *{
+        grid-column: 1 / -1;
+    }
 
 @include responsive(tablet) {
-        grid-template-columns: 1fr ;
         padding-left: 60px;
         padding-right: 60px;
 }
