@@ -82,10 +82,18 @@
 }
 }
 
-.image__header_data{
-    width: 100%;
-    height: auto;
-    display: flex;
+.titanic{
+overflow: hidden;
+height: auto;
+width: 120%;
+grid-column: 3 / -1!important;
+
+    @include responsive(desktop) {
+        width: 103%;
+        grid-column: 3 / 10 !important;
+        
+}
+    
 }
 
 .image__section__site_fic{
