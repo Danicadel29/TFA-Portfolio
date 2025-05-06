@@ -96,6 +96,22 @@ grid-column: 3 / -1!important;
     
 }
 
+.astronaute{
+    overflow: hidden;
+    height: auto;
+    width: 130%;
+    grid-column: 3 / -1!important;
+    rotate: -30deg;
+    overflow: hidden;
+    
+        @include responsive(desktop) {
+            width: 103%;
+            grid-column: 7 / 10 !important;
+            
+    }
+        
+    }
+
 .image__section__site_fic{
     grid-column: 1/ -3 !important;
 
