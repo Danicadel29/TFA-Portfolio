@@ -3,6 +3,10 @@
 //mettre en place un style de base pour le site
 // reset de la margin et padding de tout les elements
 
+body{
+  overflow-x: hidden;
+}
+
 .Home, .Work, .Data, .Fiction{
   margin: 0;
   padding: 0;
@@ -68,4 +72,43 @@
 @include responsive(desktop) {
   margin-top: 40%;
 }
+}
+
+header{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.btn_fic{
+  background-color: $color-secondary;
+  font-size: 19px;
+  padding: 20px 20px;
+  text-decoration: none;
+  border-color: $color-primary;
+  border-width: 3px;
+  border-style: solid;
+
+  &:hover{
+    background-color: $color-primary;
+    border-color: $color-secondary;
+    border-width: 3px;
+    border-style: solid;
+  }
+}
+
+.btn_data{
+  background-color: $color-quaternary;
+  font-size: 19px;
+  padding: 20px 20px;
+  text-decoration: none;
+  border-color: $color-secondary;
+  border-width: 3px;
+  border-style: solid;
+
+  &:hover{
+    background-color: $color-secondary;
+    border-color: $color-quaternary;
+    border-width: 3px;
+    border-style: solid;
+  }
 }
