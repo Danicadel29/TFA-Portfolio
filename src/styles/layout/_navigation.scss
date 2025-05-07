@@ -23,26 +23,19 @@
     width: 50vw;
     height: 5vh;
     display: flex;
-    justify-content: center;
     background-color: $color-tertiary;
     border: solid 1px $color-primary;
 
     @include responsive(tablet) {
         width: 100vw;
         height: 10vh;
-        display: flex;
-        justify-content: center;
-        background-color: $color-tertiary;
-        border: solid 1px $color-primary;
+        
 }
     
     @include responsive(desktop) {
         width: 100vw;
         height: 10vh;
-        display: flex;
-        justify-content: center;
-        background-color: $color-tertiary;
-        border: solid 1px $color-primary;
+
 }
 }
 
@@ -79,22 +72,21 @@
     width: 50vw;
     top: 2%;
     padding: 0;
-    gap: 0;
+    gap: 10%;
     
 
      @include responsive(tablet) {
+        width: 100vw;
         display: flex;
         flex-direction: row;
-        gap: 5%;
         margin: 0;
-        justify-content: center;
-        gap: 10%;
         background-color: transparent;
         position: relative;
+        justify-content: center;
     }
     
     @include responsive(desktop) {
-       gap: 25%;
+
     }
     
 }
