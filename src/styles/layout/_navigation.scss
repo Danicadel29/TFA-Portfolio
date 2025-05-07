@@ -73,6 +73,8 @@
     top: 2%;
     padding: 0;
     gap: 10%;
+    border: solid 1px $color-primary;
+    z-index: 100;
     
 
      @include responsive(tablet) {
@@ -83,6 +85,7 @@
         background-color: transparent;
         position: relative;
         justify-content: center;
+        border: none;
     }
     
     @include responsive(desktop) {
