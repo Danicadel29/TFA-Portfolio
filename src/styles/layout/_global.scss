@@ -32,6 +32,18 @@ body{
   }
 }
 
+.visible_ordi_tab{
+  display: none;
+
+  @include responsive(tablet) {
+          display: block;
+  }
+
+  @include responsive(desktop) {
+          display: block;
+  }
+}
+
 .Footer{
   display: flex;
   background-image: url(../assets/images/deco-footer.svg);
