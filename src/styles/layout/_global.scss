@@ -16,8 +16,9 @@ body{
 }
 
 .centrer{
-  width: 100vw;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .visible_ordi{
