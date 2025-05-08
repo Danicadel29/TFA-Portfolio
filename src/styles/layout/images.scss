@@ -199,3 +199,26 @@ grid-column: 3 / -1!important;
         grid-column: 7/ 8 !important;
 }
 }
+
+.vidéo_work1{
+    width: 63vw;
+    float: right;
+}
+
+.data_work,
+.fiction_work{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-color: $color-secondary;
+    border-width: 3px;
+    border-style: solid;
+
+    @include responsive(tablet) {
+        width: 100%;
+}
+
+    @include responsive(desktop) {
+        width: 100%;
+        grid-column: 1/ 4 !important;
+}}
