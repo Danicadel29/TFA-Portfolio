@@ -199,21 +199,3 @@ grid-column: 3 / -1!important;
         grid-column: 7/ 8 !important;
 }
 }
-
-.motif_tel{
-    background-image: url('../assets/images/motif_tel.svg');
-    display: block;
-    width: 50vw;
-    height: 50px;
-
-    @include responsive(tablet) {
-        width: 100%;
-        display: none;
-}
-
-    @include responsive(desktop) {
-        width: 100%;
-        grid-column: 7/ 8 !important;
-        display: none;
-}
-}
