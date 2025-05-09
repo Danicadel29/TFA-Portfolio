@@ -8,7 +8,7 @@
     background-size: cover;
     width: 100vw;
     height: 70vh;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
 
     @include responsive(tablet) {
         background-image: url('../assets/images/Section-Moi-tel.svg');
@@ -16,12 +16,14 @@
         background-position: top center;
         width: 100vw;
         height: 100vh;
+        margin-bottom: 64px;
 }
     
     @include responsive(desktop) {
         background-image: url('../assets/images/Section-Moi.svg');
         width: 100vw;
         height: 60vh;
+        margin-bottom: 96px;
 }
 }
 
@@ -44,4 +46,19 @@
 .logo{
     width: 100%;
     height: auto;
+}
+
+.section__reflex__design,
+.section__anim,
+.section__presentation,
+.section__apprit{
+    margin-bottom: 75px;
+
+    @include responsive(tablet) {
+        margin-bottom:96px;
+    }
+        
+        @include responsive(desktop) {
+            margin-bottom: 144px;
+    }
 }
