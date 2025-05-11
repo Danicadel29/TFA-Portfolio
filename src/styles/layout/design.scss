@@ -62,3 +62,12 @@
             margin-bottom: 144px;
     }
 }
+
+
+.section__credits{
+    border: 3px solid $color-secondary;
+    padding: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    grid-column: 1 / -1;
+}
