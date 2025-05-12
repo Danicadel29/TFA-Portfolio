@@ -1,173 +1,213 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Portfolio - TFA</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <!-- meta Partage -->
-        <meta property="og:site_name" content="Portfolio - TFA" >
-        <meta property="og:title" content="Portfolio" >
-        <meta property="og:description" content="Portfolio" >
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="DataPlay.thomasbruch.be">
-        <meta property="og:image" content="#">
-        <meta property="og:image:width" content="1800">
-        <meta property="og:image:height" content="945">
-        <!-- link -->
-        <link rel="icon" type="image/x-icon" href="#">
-        <link rel="stylesheet" href="styles/app.css">
-        <!-- script -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-        <script src="scripts/app.js" defer></script>
 
-        <!-- link Typos -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Bungee+Shade&family=Faculty+Glyphic&family=Gabriela&family=Kanit:wght@300;400;500;600&family=Mada&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Noto+Serif+HK:wght@200..900&family=Raleway:ital,wght@0,500;1,500&family=Red+Rose:wght@300..700&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Bungee+Shade&family=Faculty+Glyphic&family=Gabriela&family=Kanit:wght@300;400;500;600&family=Mada&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Noto+Serif+HK:wght@200..900&family=Raleway:ital,wght@0,500;1,500&family=Red+Rose:wght@300..700&family=Sansita+Swashed:wght@300..900&family=Vast+Shadow&display=swap" rel="stylesheet">
-        
-    </head>
+<head>
+  <title>Portfolio - TFA</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <!-- meta Partage -->
+  <meta property="og:site_name" content="Portfolio - TFA">
+  <meta property="og:title" content="Portfolio">
+  <meta property="og:description" content="Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="DataPlay.thomasbruch.be">
+  <meta property="og:image" content="#">
+  <meta property="og:image:width" content="1800">
+  <meta property="og:image:height" content="945">
+  <!-- link -->
+  <link rel="icon" type="image/x-icon" href="#">
+  <link rel="stylesheet" href="styles/app.css">
+  <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="scripts/app.js" defer></script>
+
+  <!-- link Typos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Bungee+Shade&family=Faculty+Glyphic&family=Gabriela&family=Kanit:wght@300;400;500;600&family=Mada&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Noto+Serif+HK:wght@200..900&family=Raleway:ital,wght@0,500;1,500&family=Red+Rose:wght@300..700&family=Sansita+Swashed:wght@300..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Bungee+Shade&family=Faculty+Glyphic&family=Gabriela&family=Kanit:wght@300;400;500;600&family=Mada&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Noto+Serif+HK:wght@200..900&family=Raleway:ital,wght@0,500;1,500&family=Red+Rose:wght@300..700&family=Sansita+Swashed:wght@300..900&family=Vast+Shadow&display=swap"
+    rel="stylesheet">
+
+</head>
+
 <body class="Data">
 
   <nav class="Nav">
 
     <button class="burger" id="burger">
-        <img src="assets/images/icone-burger.svg" alt="Icône de menu hamburger à trois lignes horizontales, utilisée pour la navigation mobile.">
+      <img src="assets/images/icone-burger.svg"
+        alt="Icône de menu hamburger à trois lignes horizontales, utilisée pour la navigation mobile.">
     </button>
 
     <ul class="Nav__liste " id="navMenu">
-     <li class="element__Nav"><img class="Logo visible_ordi_tab" src="assets/images/Logo.svg" alt="Logo de la page d'accueil."></li>
-     <li class="element__Nav sous-titre-nav"><a href="index.html">Home</a></li>
-     <li class="element__Nav sous-titre-nav"><a href="Work.html">Work</a></li>
-     <li class="element__Nav sous-titre-nav"><a href="#work.html">Contact</a></li>
+      <li class="element__Nav"><img class="Logo visible_ordi_tab" src="assets/images/Logo.svg"
+          alt="Logo de la page d'accueil."></li>
+      <li class="element__Nav sous-titre-nav"><a href="index.html">Home</a></li>
+      <li class="element__Nav sous-titre-nav"><a href="Work.html">Work</a></li>
+      <li class="element__Nav sous-titre-nav"><a href="#work.html">Contact</a></li>
     </ul>
   </nav>
 
   <img class="deco__bande__orange" src="assets/images/Bande-motif-orange.svg" alt="svg motif">
 
- <main>
+  <main>
 
-  <header class="header_data grid">
+    <header class="header_data grid">
 
-    <h1 class="grand-titre col-1-6">DataPlay</h1>
+      <h1 class="grand-titre col-1-6">DataPlay</h1>
 
-    
-       <h2 class="sous-titre col-3-6">Le point de départ</h2>
-       <p class="texte col-3-6">Ce projet, réalisé en groupe de quatre, consistait à exploiter des jeux de données de manière créative. Après un brainstorming approfondi en équipe et des recherches sur différents sujets, nous avons choisi de travailler sur les chiffres liés au tragique naufrage du Titanic. Pourquoi ce choix ? D’abord parce que le sujet nous intéressait tous, mais surtout pour faire prendre conscience de l’ampleur de la tragédie à travers des données concrètes.</p>
-    
 
-    
+      <h2 class="sous-titre col-3-6">Le point de départ</h2>
+      <p class="texte col-3-6">Ce projet, réalisé en groupe de quatre, consistait à exploiter des jeux de données de
+        manière créative. Après un brainstorming approfondi en équipe et des recherches sur différents sujets, nous
+        avons choisi de travailler sur les chiffres liés au tragique naufrage du Titanic. Pourquoi ce choix ? D’abord
+        parce que le sujet nous intéressait tous, mais surtout pour faire prendre conscience de l’ampleur de la tragédie
+        à travers des données concrètes.</p>
+
+
+
       <img class="titanic" src="assets/images/titanic.svg" alt="Image du header">
-   
-
-  </header>
-
-  <img class="deco__bande__orange" src="assets/images/bande-motif-jaune.svg" alt="svg motif">
 
 
- 
+    </header>
+
+    <img class="deco__bande__orange" src="assets/images/bande-motif-jaune.svg" alt="svg motif">
+
+
+
 
     <section class="section__reflex__design grid">
 
-      
-        <img class="image__site__complet_data col-1-4" 
-        src="./assets/image_WEB/site_complet.webp" 
+
+      <img class="image__site__complet_data col-1-4" src="./assets/image_WEB/site_complet.webp"
         srcset="./assets/image_WEB/site_complet.webp 1x, ./assets/image_reti/site_complet.webp 2x"
-        alt="image_site__complet" >
-      
-      
-        <h2 class="sous-titre col-5-10">La réflexion créative</h2>
+        alt="image_site__complet">
 
-        <p class="texte col-5-10">Une fois le concept défini, nous avons structuré nos idées de manière cohérente. Les premières propositions ont été bien accueillies, même si certaines, comme l’effet de scroll, ont finalement été écartées.</p>
+      <div class="col-5-10">
+        <h2 class="sous-titre ">La réflexion créative</h2>
 
-        <p class="texte col-5-8">Nous nous sommes ensuite orientés vers une expérience immersive : un formulaire où l’utilisateur renseigne ses informations comme s’il achetait un billet pour embarquer à bord du Titanic. En fonction des données saisies (âge, genre, classe…), un taux de survie personnalisé est généré — une manière plus personnelle de faire ressentir l’impact du drame.</p>
+        <p class="texte col-5-10">Une fois le concept défini, nous avons structuré nos idées de manière cohérente. Les
+          premières propositions ont été bien accueillies, même si certaines, comme l’effet de scroll, ont finalement
+          été écartées.</p>
 
-        <p class="texte col-5-8">En parallèle, nous avons conçu des schémas interactifs représentant les ponts du navire, annotés pour visualiser le nombre de victimes selon différents critères.</p>
-      
+        <p class="texte col-5-8">Nous nous sommes ensuite orientés vers une expérience immersive : un formulaire où
+          l’utilisateur renseigne ses informations comme s’il achetait un billet pour embarquer à bord du Titanic. En
+          fonction des données saisies (âge, genre, classe…), un taux de survie personnalisé est généré — une manière
+          plus personnelle de faire ressentir l’impact du drame.</p>
 
-      
-        <img class="image__section__site_data col-5-8" src="./assets/image_WEB/section.webp" 
+        <p class="texte col-5-8">En parallèle, nous avons conçu des schémas interactifs représentant les ponts du
+          navire, annotés pour visualiser le nombre de victimes selon différents critères.</p>
+          
+      <img class="image__section__site_data col-5-8" src="./assets/image_WEB/section.webp"
         srcset="./assets/image_WEB/section.webp 1x, ./assets/image_reti/section.webp 2x">
-      
 
-      
-        <h2 class="sous-titre col-5-8">Conception du design</h2>
 
-        <p class="texte col-5-8">On a commencé par la création du logo, puis j’ai participé au design sur Figma de la page de chargement, pour poser l’ambiance dès l’arrivée sur le site. J’ai également contribué à la conception du formulaire immersif.</p>
 
-        <p class="texte col-5-10">On a ensuite travaillé sur les éléments graphiques, notamment les plans du Titanic (vue ¾ et vue du dessus) auxquels j'ai apporté ma contribution, un travail précis pour un rendu fidèle et lisible. En parallèle, on a conçu le ticket d’embarquement, ajusté notre palette de couleurs et structuré l’ensemble pour assurer une identité graphique cohérente.</p>
+      <h2 class="sous-titre col-5-8">Conception du design</h2>
 
-        <p class="texte col-5-10">De mon côté, j’ai également lancé un compte Instagram et réalisé une première publication, afin de donner de la visibilité au projet.
-          Enfin, pour ajouter une dimension plus ludique, nous avons développé un mini-jeu des 7 différences en lien avec notre univers visuel, histoire de capter l’attention autrement qu’avec des données brutes.</p>
-      
+      <p class="texte col-5-8">On a commencé par la création du logo, puis j’ai participé au design sur Figma de la page
+        de chargement, pour poser l’ambiance dès l’arrivée sur le site. J’ai également contribué à la conception du
+        formulaire immersif.</p>
+
+      <p class="texte col-5-10">On a ensuite travaillé sur les éléments graphiques, notamment les plans du Titanic (vue
+        ¾ et vue du dessus) auxquels j'ai apporté ma contribution, un travail précis pour un rendu fidèle et lisible. En
+        parallèle, on a conçu le ticket d’embarquement, ajusté notre palette de couleurs et structuré l’ensemble pour
+        assurer une identité graphique cohérente.</p>
+
+      <p class="texte col-5-10">De mon côté, j’ai également lancé un compte Instagram et réalisé une première
+        publication, afin de donner de la visibilité au projet.
+        Enfin, pour ajouter une dimension plus ludique, nous avons développé un mini-jeu des 7 différences en lien avec
+        notre univers visuel, histoire de capter l’attention autrement qu’avec des données brutes.</p>
+      </div>
+
+
+
 
     </section>
 
     <section class="section__anim grid">
 
-     
-        <h2 class="sous-titre col-1-6">Interactivité & animations immersives</h2>
 
-        <p class="texte col-1-4">Nous avons ensuite codé, pour rendre notre projet concret. J’ai également participé à certaines parties, notamment les grids et la position des éléments du format desktop. L’animation et l’interactivité étaient des aspects essentiels du projet. Nous avons donc ajouté de petites animations dynamiques pour assurer une expérience utilisateur fluide. L’ajout des points interactifs a permis de renforcer l’aspect immersif de notre projet.</p>
+      <h2 class="sous-titre col-1-6">Interactivité & animations immersives</h2>
 
-    
+      <p class="texte col-1-4">Nous avons ensuite codé, pour rendre notre projet concret. J’ai également participé à
+        certaines parties, notamment les grids et la position des éléments du format desktop. L’animation et
+        l’interactivité étaient des aspects essentiels du projet. Nous avons donc ajouté de petites animations
+        dynamiques pour assurer une expérience utilisateur fluide. L’ajout des points interactifs a permis de renforcer
+        l’aspect immersif de notre projet.</p>
 
-     
-        <video class="image__section__anim_data col-5-8"  autoplay muted loop>  
-        <source src="assets/vidéo/video_dataplays_anim.mp4" type="video/mp4" alt="image section anim" >
-        </video>
+
+
+
+      <video class="image__section__anim_data col-5-8" autoplay muted loop>
+        <source src="assets/vidéo/video_dataplays_anim.mp4" type="video/mp4" alt="image section anim">
+      </video>
 
     </section>
 
     <section class="section__presentation grid">
 
-      
-        <h2 class="sous-titre col-1-6">Préparation de la présentation</h2>
 
-        <p class="texte col-1-6">La dernière phase du projet a été consacrée à la préparation de la présentation finale. Je me suis concentré sur la conception du stand de présentation: création d’une affiche promotionnelle qui reprend l’univers du site, et un roll-up avec un visuel du site, qui donne tout de suite une idée du projet.</p>
-      
-        <img class="image__section__presentation1_data col-7-8" src="./assets/image_WEB/affiche.webp" 
-        srcset="./assets/image_WEB/affiche.webp 1x, ./assets/image_reti/affiche.webp 2x" alt="image section presentation1" >
-      
+      <h2 class="sous-titre col-1-6">Préparation de la présentation</h2>
 
-     
-        <img class="image__section__presentation2_data col-1-4" src="./assets/image_WEB/nous_stand.webp" 
-        srcset="./assets/image_WEB/nous_stand.webp 1x, ./assets/image_reti/nous_stand.webp 2x" alt="image section presentation2" >
-      
+      <p class="texte col-1-6">La dernière phase du projet a été consacrée à la préparation de la présentation finale.
+        Je me suis concentré sur la conception du stand de présentation: création d’une affiche promotionnelle qui
+        reprend l’univers du site, et un roll-up avec un visuel du site, qui donne tout de suite une idée du projet.</p>
 
-      
-        <img src="./assets/image_WEB/data_stand.webp"  alt="image section presentation3" class="image__section__presentation3_data col-5-6">
-      
+      <img class="image__section__presentation1_data col-7-8" src="./assets/image_WEB/affiche.webp"
+        srcset="./assets/image_WEB/affiche.webp 1x, ./assets/image_reti/affiche.webp 2x"
+        alt="image section presentation1">
 
-    
-        <p class="texte col-5-8">
-          Pour renforcer l’immersion, on a ajouté une musique d’ambiance jouée en live par un membre de l’équipe, et opté pour une tenue inspirée de l’époque afin de plonger le jury dans l’ambiance du Titanic jusqu’au bout.
-        </p>
-      
+
+
+      <img class="image__section__presentation2_data col-1-4" src="./assets/image_WEB/nous_stand.webp"
+        srcset="./assets/image_WEB/nous_stand.webp 1x, ./assets/image_reti/nous_stand.webp 2x"
+        alt="image section presentation2">
+
+
+
+      <img src="./assets/image_WEB/data_stand.webp" alt="image section presentation3"
+        class="image__section__presentation3_data col-5-6">
+
+
+
+      <p class="texte col-5-8">
+        Pour renforcer l’immersion, on a ajouté une musique d’ambiance jouée en live par un membre de l’équipe, et opté
+        pour une tenue inspirée de l’époque afin de plonger le jury dans l’ambiance du Titanic jusqu’au bout.
+      </p>
+
 
     </section>
 
     <section class="section__apprit grid">
 
-      
-        <video class="image__section__apprit_data col-1-4"  autoplay muted loop>  
-          <source src="assets/vidéo/vidéo_dataplays_complet.mp4" type="video/mp4" alt="image section anim" >
-        </video>
-      
 
-      
-        <h2 class="sous-titre col-5-10">Ce que ce projet nous a apporté</h2>
+      <video class="image__section__apprit_data col-1-4" autoplay muted loop>
+        <source src="assets/vidéo/vidéo_dataplays_complet.mp4" type="video/mp4" alt="image section anim">
+      </video>
 
-        <p class="texte col-5-10">Ce projet nous a permis d’allier créativité, rigueur et travail d’équipe pour concevoir une expérience engageante et interactive. En surmontant divers défis techniques et artistiques, nous avons transformé une idée en un projet abouti, fidèle à notre vision.</p>
 
-        <p class="texte col-5-8">Il nous a également permis de renforcer nos compétences en développement collaboratif via GitHub, en apprenant à travailler efficacement en équipe sur un même dépôt. Enfin, nous avons découvert et exploité le potentiel de la librairie GSAP, qui nous a permis d’ajouter des animations fluides et immersives, renforçant l’impact visuel et l’expérience utilisateur.</p>
-      
+
+      <h2 class="sous-titre col-5-10">Ce que ce projet nous a apporté</h2>
+
+      <p class="texte col-5-10">Ce projet nous a permis d’allier créativité, rigueur et travail d’équipe pour concevoir
+        une expérience engageante et interactive. En surmontant divers défis techniques et artistiques, nous avons
+        transformé une idée en un projet abouti, fidèle à notre vision.</p>
+
+      <p class="texte col-5-8">Il nous a également permis de renforcer nos compétences en développement collaboratif via
+        GitHub, en apprenant à travailler efficacement en équipe sur un même dépôt. Enfin, nous avons découvert et
+        exploité le potentiel de la librairie GSAP, qui nous a permis d’ajouter des animations fluides et immersives,
+        renforçant l’impact visuel et l’expérience utilisateur.</p>
+
 
       <button class="btn_data sous-titre__special col-5-6">Site Web</button>
     </section>
@@ -179,14 +219,15 @@
       <li class="element__Footer"><a href="index.html">Home</a></li>
       <li class="element__Footer"><a href="Work.html">Work</a></li>
       <li class="element__Footer"><a href="Credits.html">Crédits</a></li>
-   </ul>
+    </ul>
 
-   <ul class="Info__liste col-5-6">
-    <li class="element__Info"><a href="#">Danica Delfosse</a></li>
-    <li class="element__Info"><a href="#">delfossedanica@gmail.com</a></li>
-    <li class="element__Info"><a href="#">0473184289</a></li>
-    
- </ul>
+    <ul class="Info__liste col-5-6">
+      <li class="element__Info"><a href="#">Danica Delfosse</a></li>
+      <li class="element__Info"><a href="#">delfossedanica@gmail.com</a></li>
+      <li class="element__Info"><a href="#">0473184289</a></li>
+
+    </ul>
   </footer>
 </body>
+
 </html>
