@@ -71,3 +71,19 @@
     margin-top: 15px;
     grid-column: 1 / -1;
 }
+
+.section__reflex__design{
+    margin-bottom: 75px;
+    margin-top: 25px;
+
+    @include responsive(tablet) {
+        margin-bottom:96px;
+        margin-top: 32px;
+    }
+        
+        @include responsive(desktop) {
+            margin-bottom: 144px; 
+            margin-top: 48px;
+    }
+   
+}
