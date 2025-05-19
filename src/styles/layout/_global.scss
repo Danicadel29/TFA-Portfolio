@@ -134,3 +134,19 @@ header{
         margin-bottom: 48px;
   }
 }
+
+.cursor{
+    background-image: url("../assets/image_webp/navette.webp");
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.cursor-img{
+    cursor: none
+}
