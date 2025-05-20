@@ -1,10 +1,20 @@
 
-  const burger = document.getElementById('burger');
-  const navMenu = document.getElementById('navMenu');
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.Nav');
+const navListe = document.querySelector('.Nav__liste');
 
-  burger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
+burger.addEventListener('click', () => {
+  nav.classList.toggle('open');
+  navListe.classList.toggle('active');
+});
+
+document.addEventListener('click', (e) => {
+  if (!nav.contains(e.target) && !burger.contains(e.target)) {
+    nav.classList.remove('open');
+    navListe.classList.remove('active');
+  }
+});
+
 
 
   //  Curseur personnalisé //
