@@ -160,8 +160,46 @@
     
 }
 
+.footer{
+    width: 100%;
+    height: auto;
+}
 
+.Footer__liste{
+     display: flex;
+     flex-direction: column;
+     gap: 19px;
+     margin-top: 24px;
 
+    @include responsive(tablet) {
+        gap: 50px;
+        margin-top: 59px;
+}
+
+    @include responsive(desktop) {
+        gap: 49px;
+        margin-top: 60px;
+
+}
+}
+
+.img-footer{
+  display: flex;
+  background-image: url(../assets/images/deco-footer.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  width: 100%;
+  height: 14vh;
+
+  @include responsive(tablet) {
+   height: 23vh;
+}
+
+@include responsive(desktop) {
+  height: 24vh;
+}
+}
 .element__Footer, 
 .element__Info{
     display: flex;
@@ -175,6 +213,7 @@
     padding-bottom: 3%;
     padding-top: 0%;
     display: flex;
+    flex-direction: column;
     color: $color-texte;
     text-decoration: none;
     list-style: none;
@@ -182,14 +221,10 @@
 
 
     @include responsive(tablet) {
-        padding-bottom: 1%;
-        padding-top: 0%;
         font-size: 20px;
     }
 
     @include responsive(desktop) {
-        padding-bottom: 3%;
-        padding-top: 5%;
         font-size: 24px;
     }
 }
@@ -197,13 +232,28 @@
 
 .Info__liste{
     position: absolute;
-    right: 30px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 24px;
+
+    @include responsive(tablet) {
+        gap: 50px;
+        margin-top: 59px;
+        right: 30px;
+}
+
+    @include responsive(desktop) {
+        gap: 49px;
+        margin-top: 60px;
+        right: 30px;
+}
 }
 
 .element__Info a{
     font-size: 10px;
     margin-left: auto;
-    padding-bottom: 6%;
     padding-top: 0%;
     padding-right: 0;
     padding-left: 0;
@@ -214,14 +264,10 @@
     align-items: flex-end;
 
     @include responsive(tablet) {
-        padding-bottom: 1%;
-        padding-top: 2%;
         font-size: 20px;
     }
 
     @include responsive(desktop) {
-        padding-bottom: 4%;
-        padding-top: 6%;
         font-size: 24px;
     }
 }
