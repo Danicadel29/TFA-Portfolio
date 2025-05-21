@@ -133,7 +133,7 @@
 }
 
 .fond-description-projets{
-     background-image: url('../assets/images/Fond-desciption-orange.svg');
+    background-image: url('../assets/images/Fond-desciption-orange.svg');
     background-size: cover;
     background-position: top center;
     width: 100%;
@@ -141,9 +141,17 @@
 }
 
 .fond-description-projets2{
-     background-image: url('../assets/images/Fond-desciption-vert.svg');
+    background-image: url('../assets/images/Fond-desciption-vert.svg');
     background-size: cover;
     background-position: top center;
     
     
+}
+
+.vidéo-description-tel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
 }

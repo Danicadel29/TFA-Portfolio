@@ -45,6 +45,19 @@ body{
   }
 }
 
+.visible_tel_tab{
+  display: block;
+
+  @include responsive(tablet) {
+          display: block;
+  }
+
+  @include responsive(desktop) {
+          display: none;
+  }
+}
+
+
 
 header{
   overflow-x: hidden;
