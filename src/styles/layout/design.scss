@@ -87,3 +87,25 @@
     }
    
 }
+
+
+.section-projets {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+}
+
+.design-damier{
+    background-image: url('../assets/images/block-work.svg');
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+    width: 35vw;
+}
+
+.Projets-container{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+}
