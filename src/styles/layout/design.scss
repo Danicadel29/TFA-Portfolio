@@ -43,6 +43,26 @@
 }
 }
 
+.container-tel{
+    display: flex;
+    flex-direction: row;
+}
+
+.deco__bande__orange-tel{
+    display: block;
+    right: 0px;
+    width: 50vw;
+    position: relative;
+
+    @include responsive(tablet) {
+    display: none;
+}
+    
+    @include responsive(desktop) {
+    display: none;
+}
+}
+
 .deco__bande__jaune{
     display: none;
 
