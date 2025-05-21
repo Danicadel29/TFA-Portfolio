@@ -43,6 +43,21 @@
 }
 }
 
+.deco__bande__jaune{
+    display: none;
+
+    @include responsive(tablet) {
+    display: none;
+
+}
+    
+    @include responsive(desktop) {
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+}
+
 .logo{
     width: 100%;
     height: auto;
@@ -144,6 +159,7 @@
     background-image: url('../assets/images/Fond-desciption-vert.svg');
     background-size: cover;
     background-position: top center;
+    width: 160%;
     
     
 }
@@ -152,6 +168,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 0px;
 
 }
