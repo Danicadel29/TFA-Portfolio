@@ -124,3 +124,26 @@
     z-index: 100;
     margin-right: 0;
 }
+
+.description__projets-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.fond-description-projets{
+     background-image: url('../assets/images/Fond-desciption-orange.svg');
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    
+}
+
+.fond-description-projets2{
+     background-image: url('../assets/images/Fond-desciption-vert.svg');
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    
+}
