@@ -274,13 +274,16 @@ grid-column: 3 / -1!important;
  .image__section__apprit_fic,
  .image__section__apprit_data{
     margin-bottom: 25px;
+    display: none;
 
 
     @include responsive(tablet) {
         margin-bottom: 32px;
+        display: none;
 }
 
     @include responsive(desktop) {
         margin-bottom: 48px;
+        display: block;
 }
 }
