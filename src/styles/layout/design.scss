@@ -138,7 +138,7 @@
     background-size: cover;
     background-position: top center;
     height: 40%;
-    width: 35vw;
+    width: 30vw;
     border: 2px solid $color-secondary;
     align-items: center;
     justify-content: center;
@@ -190,4 +190,21 @@
     justify-content: center;
     gap: 0px;
 
+}
+
+.Crédits{
+    display: flex;
+    flex-direction: row;
+    gap: 800px;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.Crédits img {
+    margin: 0;
+}
+
+.Crédits h2 {
+    margin-left: auto;
+    margin-bottom: 0;
 }
