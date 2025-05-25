@@ -1,10 +1,7 @@
 /* global style */
 
-//mettre en place un style de base pour le site
-// reset de la margin et padding de tout les elements
-
 body{
-  overflow-x: hidden;
+  overflow-x: hidden; //utilisation de l'ia
 }
 
 .Home, .Work, .Data, .Fiction{
@@ -60,8 +57,8 @@ body{
 
 
 header{
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x: hidden;//utilisation de l'ia
+  overflow-y: hidden;//utilisation de l'ia
 
 }
 
@@ -106,7 +103,7 @@ header{
 
 .description__projets{
   margin-bottom: 75px;
-   margin-left: 30px;
+  margin-left: 30px;
   margin-right: 30px;
 
   @include responsive(tablet) {
@@ -122,10 +119,10 @@ header{
 }
 
 .Projets{
-        margin-bottom: 25px;
+    margin-bottom: 25px;
 
       
-      @include responsive(tablet) {
+    @include responsive(tablet) {
         
         margin-bottom: 32px;
   }

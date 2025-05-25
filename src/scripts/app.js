@@ -1,3 +1,4 @@
+//anim burger menue
 
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.Nav');
@@ -17,7 +18,7 @@ document.addEventListener('click', (e) => {
 
 
 
-  //  Curseur personnalisé //
+//Curseur personnalisé
 const body = document.body;
 const Cursor = document.querySelector('.cursor');
 const images = document.querySelectorAll('.cursor-img');

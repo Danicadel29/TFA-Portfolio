@@ -58,7 +58,7 @@
     padding-right: 30px;
 
     > *{
-        grid-column: 1 / -1;
+        grid-column: 1 / -1; //utilisation de l'ia
     }
 
 
@@ -104,7 +104,7 @@
     padding-right: 30px;
 
     > *{
-        grid-column: 1 / -1;
+        grid-column: 1 / -1; //utilisation de l'ia
     }
 
 @include responsive(tablet) {
@@ -169,7 +169,7 @@
         padding-right: 30px;
     
         > *{
-            grid-column: 1 / -1;
+            grid-column: 1 / -1; //utilisation de l'ia
         }
     
     @include responsive(tablet) {

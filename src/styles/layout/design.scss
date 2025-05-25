@@ -39,12 +39,6 @@
     width: 100vw;
     height: auto;
 }
-    
-    @include responsive(desktop) {
-    display: block;
-    width: 100vw;
-    height: auto;
-}
 }
 
 .container-tel{
