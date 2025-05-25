@@ -75,16 +75,19 @@
 
 .titre{
       margin-bottom: 25px;
+      margin-top: 25px;
 
       
       @include responsive(tablet) {
         
         margin-bottom: 32px;
+        margin-top: 32px;
   }
   
     @include responsive(desktop) {
         
         margin-bottom: 48px;
+        margin-top: 48px;
   }
   }
 

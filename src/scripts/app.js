@@ -49,3 +49,26 @@ function moveCursor(e) {
         }
     });
 });
+
+//anim titre
+//arreter lanim quand pas dans l'écrant
+
+const titles = document.querySelectorAll('.anim-titre, .anim-grand-titre');
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      if (entry.isIntersecting) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    });
+  },
+  {
+    threshold: 0 // dès que l’élément entre/sort de l’écran
+  }
+);
+
+titles.forEach(title => observer.observe(title));
