@@ -282,5 +282,13 @@ grid-column: 3 / -1!important;
 }
 
 .btn-retour{
-    width: 100px;
+    width: 50px;
+
+     @include responsive(tablet) {
+       width: 80px;
+}
+
+    @include responsive(desktop) {
+        width: 100px;
+}
 }
