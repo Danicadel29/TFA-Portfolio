@@ -265,3 +265,22 @@
         
     }
 }
+
+.container-presentation{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 25px;
+
+    @include responsive(tablet) {
+        gap: 40px;
+        margin-bottom: 32px;
+        
+    }
+        
+    @include responsive(desktop) {
+         gap: 80px;
+         margin-bottom: 48px;
+        
+    }
+}
