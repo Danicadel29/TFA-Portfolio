@@ -102,16 +102,9 @@ header{
 }
 
 .description__projets{
-  margin-bottom: 75px;
   margin-left: 30px;
   margin-right: 30px;
-
-  @include responsive(tablet) {
-    margin-bottom: 96px;
-}
-
 @include responsive(desktop) {
-  margin-bottom: 144px;
   height: 93vh;
   margin-left: 60px;
   margin-right: 60px;

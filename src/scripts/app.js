@@ -72,3 +72,4 @@ const observer = new IntersectionObserver(
 );
 
 titles.forEach(title => observer.observe(title));
+
