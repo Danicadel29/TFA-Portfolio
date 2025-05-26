@@ -61,3 +61,12 @@
 #spirale-transition.show {
   transform: translate(-50%, -50%) scale(40) rotate(720deg);
 } 
+
+.video1,
+.video2{
+  display: none;
+}
+
+.video{
+    animation:titleAppear 1s ease-out forwards
+}

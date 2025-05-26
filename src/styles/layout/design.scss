@@ -148,14 +148,34 @@
     height: 75vh;
 }
 
-.bonton-fleur{
-    width: 100%;
-    height: auto;
+.bonton-fleur1,
+.bonton-fleur2{
     background: none;
     border: none;
     cursor: pointer;
     z-index: 100;
     margin-right: 0;
+     transition: transform 0.5s ease;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bonton-fleur1:hover,
+.bonton-fleur2:hover {
+  animation: rotation 1s linear infinite;
+}
+
+.btn_video{
+    display: flex;
+    justify-self: center;
+
 }
 
 .bonton-retour{

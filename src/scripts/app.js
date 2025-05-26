@@ -84,3 +84,44 @@ document.querySelectorAll("a.rond-transition").forEach(link => {
     }, 1000);
   });
 });
+
+//anim video pages work
+
+const video1 = document.querySelectorAll(".video1")
+const btn = document.querySelector(".btn_video1")
+const video = document.querySelectorAll(".video")
+
+  if(btn){
+  btn.addEventListener('click', () => {
+    console.log('click');
+
+    video.forEach(el  => {
+      el.style.display = "none";
+  });
+     
+    
+    video1.forEach(el  => {
+      el.style.display = "block";
+  })
+        });
+
+}
+
+const video2 = document.querySelectorAll(".video2")
+const btn2 = document.querySelector(".btn_video2")
+
+ if(btn2){
+  btn2.addEventListener('click', () => {
+    console.log('click');
+
+    video.forEach(el  => {
+      el.style.display = "none";
+  });
+     
+    
+    video2.forEach(el  => {
+      el.style.display = "block";
+  })
+        });
+
+}
