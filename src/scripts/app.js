@@ -73,3 +73,14 @@ const observer = new IntersectionObserver(
 
 titles.forEach(title => observer.observe(title));
 
+//transition pages
+document.querySelectorAll("a.rond-transition").forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = this.href;
+    document.getElementById("spirale-transition").classList.add("show");
+    setTimeout(() => {
+      window.location.href = href;
+    }, 1000);
+  });
+});
