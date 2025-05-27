@@ -178,27 +178,6 @@
 
 }
 
-.bonton-retour{
-    display: flex;
-    width: auto;
-    height: auto;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 100;
-    justify-self: center;
-    rotate: -90deg;
-    margin-bottom: 100px;
-
-    @include responsive(tablet) {
-        margin-bottom: 128px;
-}
-
-    @include responsive(desktop) {
-         margin-bottom: 192px;
-}
-}
-
 .description__projets-container{
     display: flex;
     flex-direction: row;

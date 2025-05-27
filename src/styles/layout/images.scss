@@ -269,14 +269,25 @@ grid-column: 3 / -1!important;
 }
 }
 
-.btn-retour{
+.btn-retour {
     width: 50px;
+    display: flex;
+    height: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    margin: 0 auto;
+    rotate: -90deg;
+    margin-bottom: 100px;
 
      @include responsive(tablet) {
        width: 80px;
+       margin-bottom: 128px;
 }
 
     @include responsive(desktop) {
         width: 100px;
+        margin-bottom: 192px;
 }
 }
