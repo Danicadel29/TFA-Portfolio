@@ -213,23 +213,24 @@
 .Crédits{
     display: flex;
     flex-direction: row;
-    gap: 0px;
+    gap: 5px;
     align-items: center;
     justify-content: center;
-    height: 100px;
     border: 3px solid $color-secondary;
-    padding: 30px;
+    padding: 10px;
     margin-bottom: 15px;
     margin-top: 15px;
     grid-column: 1 / -1;
 
     @include responsive(tablet) {
-        gap: 0px;
+        gap: 10px;
+        padding: 30px;
         
     }
         
     @include responsive(desktop) {
         gap: 800px;
+        padding: 30px;
         
     }
 }
