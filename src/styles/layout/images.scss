@@ -238,17 +238,20 @@ grid-column: 3 / -1!important;
     height: auto;
     justify-self: center;
     margin-bottom: 25px;
+    display: none;
 
     @include responsive(tablet) {
         width: 30%;
         justify-self: center;
         margin-bottom: 32px;
+        display: block;
     }
         
     @include responsive(desktop) {
         width: 100%;
         margin-top: -61px;
         margin-bottom: 85px;
+        display: block;
     }
  }
 
