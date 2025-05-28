@@ -123,11 +123,19 @@
 
 
 .section-projets {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    height: 61vh;
-    justify-content: center;
+
+    display: none;
+     @include responsive(tablet) {
+     display: none;
+    }
+        
+        @include responsive(desktop) {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        height: 100vh;  
+    }
+   
 
 }
 

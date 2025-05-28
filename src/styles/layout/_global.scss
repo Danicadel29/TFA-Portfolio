@@ -121,7 +121,7 @@ header{
   }
   
     @include responsive(desktop) {
-        
+         height: 100vh;
         margin-bottom: 48px;
   }
 }
