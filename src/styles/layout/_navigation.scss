@@ -135,8 +135,8 @@
 .Footer__liste{
      display: flex;
      flex-direction: column;
-    gap: 30px;
-    margin-top: 32px;
+    gap: 15px;
+    margin-top: 31px;
 
     @include responsive(tablet) {
         gap: 15px;
@@ -157,14 +157,14 @@
   background-position: bottom center;
   background-size: cover;
   width: 100%;
-  height: 14vh;
+  height: 92px;
 
   @include responsive(tablet) {
-   height: 15vh;
+   height: 120px;
 }
 
 @include responsive(desktop) {
-  height: 24vh;
+         height: 197px;
 }
 }
 .element__Footer, 
@@ -202,8 +202,8 @@
     right: 10px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-top: 32px;
+    gap: 15px;
+    margin-top: 31px;
 
     @include responsive(tablet) {
         gap: 15px;
