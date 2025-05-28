@@ -133,13 +133,13 @@
 }
 
 .titanic{
-overflow-x: hidden; //utilisation de l'ia
 height: auto;
-width: 120%;
+width: 100%;
 grid-column: 3 / -1!important;
 
+
     @include responsive(desktop) {
-        width: 103%;
+        width: 100%;
         grid-column: 3 / 10 !important;
         
 }
@@ -147,14 +147,12 @@ grid-column: 3 / -1!important;
 }
 
 .astronaute{
-    overflow-x: hidden; //utilisation de l'ia
     height: auto;
-    width: 130%;
+    width: 100%;
     grid-column: 3 / -1!important;
-    rotate: -30deg;
     
         @include responsive(desktop) {
-            width: 103%;
+            width: 100%;
             grid-column: 7 / 10 !important;
             
     }

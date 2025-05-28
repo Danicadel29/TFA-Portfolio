@@ -135,16 +135,16 @@
 .Footer__liste{
      display: flex;
      flex-direction: column;
-     gap: 19px;
-     margin-top: 24px;
+    gap: 30px;
+    margin-top: 32px;
 
     @include responsive(tablet) {
-        gap: 50px;
-        margin-top: 59px;
+       gap: 36px;
+        margin-top: 46px;
 }
 
     @include responsive(desktop) {
-        gap: 49px;
+        gap: 36px;
         margin-top: 60px;
 
 }
@@ -202,17 +202,17 @@
     right: 10px;
     display: flex;
     flex-direction: column;
-    gap: 19px;
-    margin-top: 24px;
+    gap: 30px;
+    margin-top: 32px;
 
     @include responsive(tablet) {
-        gap: 50px;
-        margin-top: 59px;
+        gap: 36px;
+        margin-top: 46px;
         right: 30px;
 }
 
     @include responsive(desktop) {
-        gap: 49px;
+        gap: 36px;
         margin-top: 60px;
         right: 30px;
 }
