@@ -36,7 +36,7 @@
     width: 100%;
     height: 36px;
     background-image: url(../assets/images/Bande-motif-orange.svg);
-    background-size: 80%;
+    background-size: 100%;
 }
 .deco__bande__orange{
     display: none;
@@ -306,6 +306,23 @@
 
 .vidéo_work3-rose{
     background-image: url('../assets/images/Fond-video-orange.svg');
+    border: solid 2px $color-secondary;
+    display: block;
+    background-size: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+
+     @include responsive(tablet) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border: solid 3px $color-secondary;
+        margin-bottom: 32px;
+    }
+}
+
+.vidéo_work3-vert{
+    background-image: url('../assets/images/Fond-video-vert.svg');
     border: solid 2px $color-secondary;
     display: block;
     background-size: 100%;
