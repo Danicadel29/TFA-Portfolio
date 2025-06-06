@@ -60,9 +60,11 @@ body{
 
 
 .btn_fic{
+  display: block;
   background-color: $color-secondary;
   font-size: 19px;
-  padding: 20px 20px;
+  width: 200px;
+  padding: 5px;
   text-decoration: none;
   border-color: $color-primary;
   border-width: 3px;
@@ -77,9 +79,11 @@ body{
 }
 
 .btn_credit{
+  display: block;
   background-color: $color-secondary;
   font-size: 19px;
-  padding: 20px 20px;
+  width: 200px;
+  padding: 5px;
   text-decoration: none;
   border-color: $color-primary;
   border-width: 3px;
@@ -103,9 +107,11 @@ body{
 }
 
 .btn_data{
+  display: block;
   background-color: $color-quaternary;
   font-size: 19px;
-  padding: 20px 20px;
+  width: 200px;
+  padding: 5px;
   text-decoration: none;
   border-color: $color-secondary;
   border-width: 3px;

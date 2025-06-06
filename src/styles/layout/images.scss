@@ -282,12 +282,15 @@ grid-column: 3 / -1!important;
     z-index: 100;
     margin: 0 auto;
     rotate: -90deg;
+    margin-top: 25px;
 
      @include responsive(tablet) {
        width: 80px;
+       margin-top: 32px;
 }
 
     @include responsive(desktop) {
         width: 100px;
+        margin-top: 48px;
 }
 }
